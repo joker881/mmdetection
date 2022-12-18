@@ -8,6 +8,6 @@ resume_from = None
 workflow = [('train', 1)]
 opencv_num_threads = 0
 mp_start_method = 'fork'
-auto_scale_lr = dict(enable=False, base_batch_size=1)
-work_dir = 'E:\\researchprojects\mmdetection\work_dirs'
+auto_scale_lr = dict(enable=False, base_batch_size=16)
+work_dir = '/home/ubuntu/mmdetection/work_dirs'
 auto_resume = False

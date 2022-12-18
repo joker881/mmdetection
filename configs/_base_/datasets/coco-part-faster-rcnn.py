@@ -40,8 +40,8 @@ data = dict(
     workers_per_gpu=4,
     train=dict(
         type='CocoDataset',
-        ann_file='E:\\researchprojects\mmdetection\data\\annotation\loc_noise_50.json',
-        img_prefix='E:\\researchprojects\mmdetection\data\\train',
+        ann_file='/home/ubuntu/mmdetection/data/annotation/loc_noise_50.json',
+        img_prefix='/home/ubuntu/mmdetection/data/train',
         pipeline=[
             dict(type='LoadImageFromFile'),
             dict(type='LoadAnnotations', with_bbox=True),
@@ -58,8 +58,8 @@ data = dict(
         ]),
     val=dict(
         type='CocoDataset',
-        ann_file='E:\\researchprojects\mmdetection\data\\annotation\instances_val2017.json',
-        img_prefix='E:\\researchprojects\mmdetection\data\\val',
+        ann_file='/home/ubuntu/mmdetection/data/annotation/instances_val2017.json',
+        img_prefix='/home/ubuntu/mmdetection/data/val',
         pipeline=[
             dict(type='LoadImageFromFile'),
             dict(
@@ -81,8 +81,8 @@ data = dict(
         ]),
     test=dict(
         type='CocoDataset',
-        ann_file='E:\\researchprojects\mmdetection\data\\annotation\instances_val2017.json',
-        img_prefix='E:\\researchprojects\mmdetection\data\\val',
+        ann_file='/home/ubuntu/mmdetection/data/annotation/instances_val2017.json',
+        img_prefix='/home/ubuntu/mmdetection/data/val',
         pipeline=[
             dict(type='LoadImageFromFile'),
             dict(
